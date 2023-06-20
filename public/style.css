@@ -1,0 +1,329 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(24, 88, 116);
+    color: white;
+    padding: 0px 15px;
+    position: sticky;
+    top: 0px;     
+    z-index: 2; 
+    /* position: relative; */
+}
+
+
+.nav button{
+    
+    background-color: #bd1b31;
+    /* background-color: #f11937; */
+    padding: 0px 30px;
+    border-radius: 22px;
+    margin: 5px 0px;
+    border-style: none;
+    cursor: pointer;
+}    */
+
+ .nav .button:hover{ 
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+
+
+.nav h1{
+    font-size: 3em;
+    
+}
+.nav span{
+    color: #dc2828;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    /* height: 80vh; */
+    background-image: linear-gradient(rgba(0, 0, 0, .3),rgba(0, 0, 0, .6)), url(digi.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 50px 0px;
+}
+/* .maininner{
+    width: 80vw;
+    mari
+} */
+.main h1{
+    font-size: 5vw;
+    font-weight: 800;
+    text-shadow: 1px 1px 8px black;
+    
+}
+
+.main #heading{
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text 8s;
+    animation-iteration-count: infinite;
+    border-right: 1px solid white;
+    animation-timing-function: steps(20);
+}
+@keyframes text {
+    0% {width: 0ch;}
+    50%{width: 20ch;}
+}
+
+
+.main #heading2{
+
+  display: none;
+
+}
+
+
+
+.main span{
+    color: #f11937;
+}
+
+.msg{
+    /* border: 2px solid white; */
+    padding: 0px 20px;
+    font-size: 2.5vw;
+}
+
+.main a{
+    text-decoration: none;
+    background-color: #bd1b31;
+    margin: 50px auto;
+    padding: 20px 20px;
+    display: block;
+    /* width: 20vw; */
+    border-radius: 25px;    
+    font-size: 1.2em;
+    color: black;
+    font-weight: bolder;
+}
+/* .main a:hover{
+    background-color: rgb(235, 232, 232);
+} */
+
+.main_service{
+    text-align: center;
+    padding: 10px 0px;
+         
+}
+.main_service h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+.main_service h1:hover{
+    color: rgb(57, 190, 242);
+}
+.service{
+    display: flex;
+
+}
+.service div{
+    margin: 25px 50px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+   overflow: hidden;
+    /* z-index: -1; */
+   
+}
+
+.service img{
+    width: 100%;
+    height: 90%;
+   
+    transition: all 1s;
+   }
+
+   .service img:hover{
+    transform: scale(1.5);
+   }
+
+     
+
+.service a{
+    text-decoration: none;
+    background-color: rgb(14, 14, 103);
+    display: block;
+    text-align: center;
+    padding: 16px;
+    color: rgb(255, 255, 255);
+    border: 2px solid #ffffff;
+    /* border-radius: 10px; */
+    font-size: 17px;
+    z-index: 1;
+    font-weight: bolder;
+}
+
+.service a:hover{
+    background-color: rgb(22, 22, 123);
+    color: white;
+}
+
+.media{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    padding: 50px 0px;
+    background-color: rgb(235, 229, 229);
+}
+
+.media div{
+    margin: 10px 25px;
+    color:rgb(24, 89, 116) ;
+    text-align: center; 
+    background-color: white;
+    padding: 50px 10px;
+    box-shadow: 0px 0px 8px;
+    border-radius: 10px;
+    transition: all .3s;
+    font-size: 20px;
+    
+}
+.media a{
+    text-decoration: none;
+    color:rgb(24, 89, 116) ;
+}
+
+.media div:hover{
+    transform: scale(1.1);
+}
+.media div:hover .fa-brands{
+    transform: rotate(360deg);
+    color: red;
+}
+.media div:hover .fa-facebook,.media div:hover .fa-telegram{
+    
+    color: rgb(62, 109, 236);
+}
+.fa-brands{
+    transition: all 1s;
+}
+.fa-brands:hover{
+    transform: rotate(360deg);
+    color: red;
+}
+
+.footer{
+    display: flex;
+    /* background-image: linear-gradient(rgba(0, 0, 0, .8),rgba(0, 0, 0, .8)), url(image/background.jpg); */
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.add{
+    flex: 1;
+}
+.about{
+    flex: 1;
+    margin: 10px 20px;
+    margin: 5px;
+    color: white;
+    text-align: justify;
+    line-height: 30px;
+    /* border: 2px solid white; */
+}
+
+/* .footer input {
+    padding: 8px 20px;
+    width: 100%;
+    margin: 10px 0px;
+       
+}*/
+.footer h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 2em;
+} 
+
+.add h3{
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    border-left: none;
+    border-right: none;
+    margin: 10px 40px;
+    padding: 10px;
+}
+
+.add h2{
+    color: white;
+    text-align: center;
+    padding: 30px 0px;
+    font-size: 3em;
+}
+.add a{
+    color: white;
+    text-decoration: none;
+}
+.add a:hover{
+    color: rgb(57, 190, 242);
+}
+
+.footer span{
+    color: rgb(57, 190, 242);
+}
+
+.footer #whatsapplogo{
+    /* position: absolute; */
+    right: 20px;
+    bottom: 80px;
+    position: fixed;
+    z-index: 3;
+    transition: all .5s;
+}
+#whatsapplogo:hover{
+    transform: scale(1.2);
+}
+
+.footer #instagramlogo{
+    /* position: absolute; */
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+    z-index: 3;
+    transition: all .5s;
+}
+#instagramlogo:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width:700px){
+    .media {
+        flex-direction: column;
+    }
+    .service{
+        flex-direction: column;
+    }
+
+    .footer{
+        flex-direction: column-reverse;
+    }
+    .main h1{
+        font-size: 7vw;
+    }
+}
+
+
+
